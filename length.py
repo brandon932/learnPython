@@ -1,5 +1,13 @@
 
 def length(s):
-  return len(s)
-mystr = input("input any string: " )
-print ("your string is " +str(length(mystr)) + " characters long")
+  if type(s) == int:
+    print ("intergers do not have lengths ")
+  elif type(s) == float:
+    print ("floats do not have lengths ")
+  else:
+    print (len(s) )
+
+#mystr = input("input any string: " )
+mystr = 2.3
+
+length(mystr)
