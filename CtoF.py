@@ -16,7 +16,18 @@ def test():
   temp = [10,-20,-289,100]
   for c in temp:
     cel_to_fahr(c)
-test()
-main()
+
+def tofile():
+  temp = [10,-20,-289,100]
+  file = open("temp.txt",'w+')
+  for t in temp:
+    x = cel_to_fahr(t)
+    if x != None:
+      file.write(str(x) +"\n")
+  file.close()
+
+#test()
+#main()
+tofile()
 
 
