@@ -1,9 +1,9 @@
 
 def length(s):
   if type(s) == int:
-    print ("intergers do not have lengths ")
+    print ( "intergers do not have lengths ")
   elif type(s) == float:
-    print ("floats do not have lengths ")
+    print ( "floats do not have lengths ")
   else:
     print (len(s) )
 
@@ -11,3 +11,4 @@ def length(s):
 mystr = 2.3
 
 length(mystr)
+length("hello")
